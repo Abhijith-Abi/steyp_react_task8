@@ -102,7 +102,6 @@ function LeftBar() {
 
 export default LeftBar;
 const Container = styled.section`
-    background: #000;
     width: 10%;
     height: 100vh;
     display: flex;
@@ -115,6 +114,7 @@ const Logo = styled.h1`
     width: 60px;
     display: inline-block;
     margin-top: 20px;
+    cursor: pointer;
 `;
 const LogoImg = styled.img`
     display: block;
@@ -123,20 +123,25 @@ const LogoImg = styled.img`
 const SectionMiddle = styled.div``;
 const Items = styled.ul`
     background-color: var(--Orange);
-    padding: 20px;
+    padding: 14px;
     border-radius: 50px;
 `;
 const Item = styled.li`
-    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
     &:last-child {
         margin-bottom: 0;
     }
     &:hover {
-        background-color: green;
-        border-radius: 50%;
+        background-color: #f68634;
+        transition: 1s;
     }
 `;
-const Menu = styled.div``;
+const Menu = styled.div`
+    width: 20px;
+`;
 const Icons = styled.img`
     display: block;
     width: 100%;
@@ -149,4 +154,5 @@ const ProImg = styled.img`
     display: block;
     width: 100%;
     border-radius: 50%;
+    cursor: pointer;
 `;
