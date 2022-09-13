@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import LeftBar from "./components/screens/LeftBar";
 
 function App() {
     return (
         <div>
-            <h1>Welcome</h1>
+            <LeftBar />
         </div>
     );
 }
