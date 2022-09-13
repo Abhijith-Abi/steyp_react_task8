@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ol,
+ul {
+    list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+del {
+    text-decoration: line-through;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+textarea,
+select {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    color: #000;
+}
+
+.thumb {
+    display: block;
+}
+
+.thumb img {
+    display: block;
+    width: 100%;
+}
+
+a:hover,
+.submit:hover {
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: "Inter", Arial;
+    font-weight: 400;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+:root {
+    --Black: #fec0a7;
+    --Grey: #747474;
+    --Orange: #f46801;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-ExtraBold.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-Black.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-Medium.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-Bold.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-Light.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-ExtraLight.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-Regular.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-SemiBold.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../src/assets/fonts/Inter-Thin.woff2") format("woff2"),
+        url("../src/assets/fonts/Inter-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
