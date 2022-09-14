@@ -275,16 +275,19 @@ const MeetHed = styled.h1`
 `;
 const Datas = styled.ul`
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
 `;
 const Data = styled.li`
     border-bottom: 2px solid #fff;
+    margin-right: 90px;
     cursor: pointer;
     &:hover {
         border-bottom: 2px solid var(--Orange);
         transition: 0.5s ease-in;
+    }
+    &:last-child {
+        margin-right: 0px;
     }
 `;
 const Contents = styled.h4`
