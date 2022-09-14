@@ -37,7 +37,7 @@ function Middle() {
                     <Items>
                         <Item>
                             <List>
-                                <ItemHeds>
+                                <ItemHeds style={{ marginRight: "50px" }}>
                                     <input
                                         placeholder="Search your food..."
                                         value=""
