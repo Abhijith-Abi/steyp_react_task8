@@ -103,7 +103,6 @@ function LeftBar() {
 export default LeftBar;
 const Container = styled.section`
     width: 10%;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -123,7 +122,7 @@ const LogoImg = styled.img`
 const SectionMiddle = styled.div``;
 const Items = styled.ul`
     background-color: var(--Orange);
-    padding: 14px;
+    padding: 10px;
     border-radius: 50px;
 `;
 const Item = styled.li`
