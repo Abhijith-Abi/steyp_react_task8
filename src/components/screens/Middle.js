@@ -374,6 +374,7 @@ const ActualPrice = styled.h4`
     font-size: 14px;
     font-weight: 500;
     color: var(--Grey);
+    text-decoration: line-through;
 `;
 const PlceOrder = styled.button`
     margin-left: 80px;
@@ -381,4 +382,5 @@ const PlceOrder = styled.button`
     background-color: var(--Orange);
     padding: 4px 12px;
     border-radius: 25px;
+    cursor: pointer;
 `;
