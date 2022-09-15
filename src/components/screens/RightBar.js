@@ -76,7 +76,85 @@ function RightBar() {
                         </ListCard>
                     </BreakfastCard>
                 </SectionBrakfast>
-                <SectionLunch></SectionLunch>
+                <SectionLaunch>
+                    <LaunchHead>
+                        <LaunchName>Launch</LaunchName>
+                        <LaunchButton>Being orderd</LaunchButton>
+                    </LaunchHead>
+                    <LaunchTime>01.30AM</LaunchTime>
+                    <LaunchCard>
+                        <LListCard>
+                            <LItemCard>
+                                <LaunchCardImg>
+                                    <LaunchImg
+                                        src={require("../../assets/images/sideimg3.jpg")}
+                                    />
+                                </LaunchCardImg>
+                                <LaunchDetials>
+                                    <LItemName>Nasi Padang Patikraja</LItemName>
+                                    <LItemPrice>
+                                        <LOfferPrice>
+                                            <M>$</M>8,10
+                                        </LOfferPrice>
+                                        <LNormalPrice>$10,10</LNormalPrice>
+                                    </LItemPrice>
+                                </LaunchDetials>
+                            </LItemCard>
+                            <LItemCard>
+                                <LaunchCardImg>
+                                    <LaunchImg
+                                        src={require("../../assets/images/sideimg4.jpg")}
+                                    />
+                                </LaunchCardImg>
+                                <LaunchDetials>
+                                    <LItemName>Nasi Padang Patikraja</LItemName>
+                                    <LItemPrice>
+                                        <LOfferPrice>
+                                            <M>$</M>8,10
+                                        </LOfferPrice>
+                                        <LNormalPrice>$10,10</LNormalPrice>
+                                    </LItemPrice>
+                                </LaunchDetials>
+                            </LItemCard>
+                        </LListCard>
+                    </LaunchCard>
+                </SectionLaunch>
+                <SectionDinner>
+                    <DinnerHead>
+                        <DinnerName>Dinner</DinnerName>
+                        <DinnerButton>Haven't orderd yet</DinnerButton>
+                    </DinnerHead>
+                    <DinnerTime>08.30AM</DinnerTime>
+                    <DinnerCard>
+                        <DinnerListCard>
+                            <DinnerItemCard>
+                                <DinnerCardImg>
+                                    <DinnerImg
+                                        src={require("../../assets/images/sideimg5.jpg")}
+                                    />
+                                </DinnerCardImg>
+                                <DinnerDetials>
+                                    <DinnerItemName>
+                                        Nasi Padang Patikraja
+                                    </DinnerItemName>
+                                    <DinnerItemPrice>
+                                        <DinnerOfferPrice>
+                                            <B>$</B>8,10
+                                        </DinnerOfferPrice>
+                                        <DinnerNormalPrice>
+                                            $10,10
+                                        </DinnerNormalPrice>
+                                    </DinnerItemPrice>
+                                </DinnerDetials>
+                            </DinnerItemCard>
+                        </DinnerListCard>
+                    </DinnerCard>
+                </SectionDinner>
+                <SectionUpload>
+                    <Upload>
+                        <UploadData>Drop here to add</UploadData>
+                    </Upload>
+                </SectionUpload>
             </Container>
         </>
     );
@@ -96,6 +174,7 @@ const Heading = styled.h1`
 const SectionDate = styled.div`
     border: 1px solid #dedddf;
     margin-bottom: 20px;
+    border-radius: 6px;
 `;
 const List = styled.ul`
     display: flex;
@@ -121,7 +200,7 @@ const BreakfastHead = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 `;
 const BreakfastName = styled.h1`
     font-size: 24px;
@@ -189,4 +268,167 @@ const NormalPrice = styled.h4`
     color: var(--Grey);
     text-decoration: line-through;
 `;
-const SectionLunch = styled.div``;
+// ===
+const SectionLaunch = styled.div``;
+const LaunchHead = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+`;
+const LaunchName = styled.h1`
+    font-size: 24px;
+    font-weight: 600;
+`;
+const LaunchButton = styled.button`
+    padding: 10px 16px;
+    color: #e4c291;
+    background: #fff2e1;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+`;
+const LaunchTime = styled.h4`
+    font-size: 18px;
+    font-weight: 600;
+`;
+const LaunchCard = styled.div``;
+const LListCard = styled.ul``;
+const LItemCard = styled.li`
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 20px 0px;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    cursor: pointer;
+`;
+const LaunchCardImg = styled.div`
+    width: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+`;
+const LaunchImg = styled.img`
+    display: block;
+    width: 100%;
+`;
+const LaunchDetials = styled.div`
+    width: 100%;
+    margin: auto 0;
+    padding: 10px;
+`;
+const LItemName = styled.h2`
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+`;
+const LItemPrice = styled.div`
+    display: flex;
+    align-items: center;
+`;
+const LOfferPrice = styled.h2`
+    font-size: 20px;
+    font-weight: 500;
+`;
+const M = styled.div`
+    display: inline-block;
+    color: var(--Orange);
+`;
+const LNormalPrice = styled.h4`
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Grey);
+    text-decoration: line-through;
+`;
+// ===
+
+const SectionDinner = styled.div``;
+const DinnerHead = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+`;
+const DinnerName = styled.h1`
+    font-size: 24px;
+    font-weight: 600;
+`;
+const DinnerButton = styled.button`
+    padding: 10px 16px;
+    color: #dd908b;
+    background: #fee9e8;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+`;
+const DinnerTime = styled.h4`
+    font-size: 18px;
+    font-weight: 600;
+`;
+const DinnerCard = styled.div``;
+const DinnerListCard = styled.ul``;
+const DinnerItemCard = styled.li`
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 20px 0px;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    cursor: pointer;
+`;
+const DinnerCardImg = styled.div`
+    width: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+`;
+const DinnerImg = styled.img`
+    display: block;
+    width: 100%;
+`;
+const DinnerDetials = styled.div`
+    width: 100%;
+    margin: auto 0;
+    padding: 10px;
+`;
+const DinnerItemName = styled.h2`
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+`;
+const DinnerItemPrice = styled.div`
+    display: flex;
+    align-items: center;
+`;
+const DinnerOfferPrice = styled.h2`
+    font-size: 20px;
+    font-weight: 500;
+`;
+const B = styled.div`
+    display: inline-block;
+    color: var(--Orange);
+`;
+const DinnerNormalPrice = styled.h4`
+    margin-left: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Grey);
+    text-decoration: line-through;
+`;
+// ==
+const SectionUpload = styled.div``;
+const Upload = styled.div`
+    background-color: #ffecde;
+    border: 2px dashed #edb68b;
+    padding: 20px;
+    border-radius: 6px;
+`;
+const UploadData = styled.h1`
+    color: #df8844;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3em;
+`;

@@ -359,7 +359,7 @@ const ItemName = styled.h4`
 `;
 const PriceSection = styled.ul`
     display: flex;
-    padding: 5px 30px;
+    padding: 10px 30px;
 `;
 const ListSection = styled.li``;
 const DiscountPrice = styled.h2`
@@ -384,3 +384,4 @@ const PlceOrder = styled.button`
     border-radius: 25px;
     cursor: pointer;
 `;
+// ===
