@@ -420,6 +420,9 @@ const ItemName = styled.h4`
     @media all and (max-width: 1440px) {
         font-size: 18px;
     }
+    @media all and (max-width: 1050px) {
+        padding: 12px 30px;
+    }
 `;
 const PriceSection = styled.ul`
     display: flex;
