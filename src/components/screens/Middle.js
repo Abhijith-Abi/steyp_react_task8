@@ -231,22 +231,34 @@ const Item = styled.li`
     &:first-child {
         margin-left: 0px;
     }
+    @media all and (max-width: 1440px) {
+        margin-left: 30px;
+    }
 `;
 
 const List = styled.div``;
 const SrechIcon = styled.img`
     width: 20px;
+    @media all and (max-width: 1440px) {
+        width: 15px;
+    }
 `;
 const Heding = styled.h1`
     font-weight: bold;
     font-size: 34px;
     margin-bottom: 10px;
+    @media all and (max-width: 1440px) {
+        font-size: 28px;
+    }
 `;
 const SubHed = styled.h6`
     font-size: 16px;
     font-weight: bold;
     color: var(--Grey);
     cursor: pointer;
+    @media all and (max-width: 1440px) {
+        font-size: 14px;
+    }
 `;
 const ItemHed = styled.h4`
     font-size: 14px;
@@ -288,6 +300,9 @@ const Data = styled.li`
     }
     &:last-child {
         margin-right: 0px;
+    }
+    &:first-child {
+        border-bottom: 2px solid var(--Orange);
     }
 `;
 const Contents = styled.h4`
@@ -356,6 +371,9 @@ const ItemName = styled.h4`
     font-size: 16px;
     font-weight: 600;
     padding: 20px 30px;
+    @media all and (max-width: 1440px) {
+        font-size: 18px;
+    }
 `;
 const PriceSection = styled.ul`
     display: flex;
@@ -365,6 +383,9 @@ const ListSection = styled.li``;
 const DiscountPrice = styled.h2`
     font-size: 20px;
     font-weight: 500;
+    @media all and (max-width: 1440px) {
+        font-size: 18px;
+    }
 `;
 const S = styled.span`
     color: var(--Orange);
@@ -375,6 +396,9 @@ const ActualPrice = styled.h4`
     font-weight: 500;
     color: var(--Grey);
     text-decoration: line-through;
+    @media all and (max-width: 1440px) {
+        margin-left: 10px;
+    }
 `;
 const PlceOrder = styled.button`
     margin-left: 80px;
@@ -383,5 +407,8 @@ const PlceOrder = styled.button`
     padding: 4px 12px;
     border-radius: 25px;
     cursor: pointer;
+    @media all and (max-width: 1440px) {
+        margin-left: 50px;
+    }
 `;
 // ===
