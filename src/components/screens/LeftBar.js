@@ -137,6 +137,9 @@ const Item = styled.li`
         background-color: #f68634;
         transition: 1s;
     }
+    @media all and (max-width: 1280px) {
+        padding: 15px;
+    }
 `;
 const Menu = styled.div`
     width: 20px;

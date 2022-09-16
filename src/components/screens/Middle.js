@@ -215,6 +215,9 @@ function Middle() {
 export default Middle;
 const Container = styled.section`
     width: 70%;
+    @media all and (max-width: 1280px) {
+        width: 60%;
+    }
 `;
 const SectionHeader = styled.header`
     padding: 30px 0px;
@@ -234,6 +237,9 @@ const Item = styled.li`
     @media all and (max-width: 1440px) {
         margin-left: 30px;
     }
+    @media all and (max-width: 1280px) {
+        margin-left: 20px;
+    }
 `;
 
 const List = styled.div``;
@@ -250,6 +256,9 @@ const Heding = styled.h1`
     @media all and (max-width: 1440px) {
         font-size: 28px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 24px;
+    }
 `;
 const SubHed = styled.h6`
     font-size: 16px;
@@ -258,6 +267,9 @@ const SubHed = styled.h6`
     cursor: pointer;
     @media all and (max-width: 1440px) {
         font-size: 14px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 12px;
     }
 `;
 const ItemHed = styled.h4`
@@ -279,11 +291,17 @@ const ItemHeds = styled.h4`
     cursor: pointer;
     background-color: var(--Black);
     border-radius: 20px;
+    @media all and (max-width: 1280px) {
+        display: none;
+    }
 `;
 const SectionTop = styled.section``;
 const MeetHed = styled.h1`
     font-weight: 600;
     font-size: 24px;
+    @media all and (max-width: 1280px) {
+        font-size: 22px;
+    }
 `;
 const Datas = styled.ul`
     display: flex;
@@ -304,6 +322,7 @@ const Data = styled.li`
     &:first-child {
         border-bottom: 2px solid var(--Orange);
     }
+    margin-right: 35px;
 `;
 const Contents = styled.h4`
     font-size: 18px;
@@ -312,6 +331,9 @@ const Contents = styled.h4`
     &:hover {
         font-weight: 500;
         color: #000;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 16px;
     }
 `;
 const Hr = styled.hr`
@@ -325,42 +347,66 @@ const MenuItems = styled.div`
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     padding: 20px;
+    @media all and (max-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-rows: repeat(3, 1fr);
+    }
 `;
 const Grid1 = styled.div`
     grid-area: 1 / 1 / 2 / 2;
     background-color: var(--Black);
     border-radius: 10px;
     overflow: hidden;
+    @media all and (max-width: 1280px) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 `;
 const Grid2 = styled.div`
     grid-area: 1 / 2 / 2 / 3;
     background-color: var(--Black);
     border-radius: 10px;
     overflow: hidden;
+    @media all and (max-width: 1280px) {
+        grid-area: 1 / 2 / 2 / 3;
+    }
 `;
 const Grid3 = styled.div`
     grid-area: 1 / 3 / 2 / 4;
     background-color: var(--Black);
     border-radius: 10px;
     overflow: hidden;
+    @media all and (max-width: 1280px) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 `;
 const Grid4 = styled.div`
     grid-area: 2 / 1 / 3 / 2;
     background-color: var(--Black);
     border-radius: 10px;
     overflow: hidden;
+    @media all and (max-width: 1280px) {
+        grid-area: 2 / 2 / 3 / 3;
+    }
 `;
 const Grid5 = styled.div`
     grid-area: 2 / 2 / 3 / 3;
     background-color: var(--Black);
     border-radius: 10px;
     overflow: hidden;
+    @media all and (max-width: 1280px) {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 `;
 const Grid6 = styled.div`
     grid-area: 2 / 3 / 3 / 4;
     background-color: var(--Black);
     border-radius: 10px;
     overflow: hidden;
+    @media all and (max-width: 1280px) {
+        grid-area: 3 / 2 / 4 / 3;
+    }
 `;
 const ImgContainer = styled.div``;
 const Photo = styled.img`

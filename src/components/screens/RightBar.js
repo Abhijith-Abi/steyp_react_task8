@@ -168,6 +168,9 @@ const Container = styled.section`
     @media all and (max-width: 1440px) {
         padding: 10px;
     }
+    @media all and (max-width: 1280px) {
+        width: 30%;
+    }
 `;
 const Heading = styled.h1`
     font-size: 24px;
@@ -176,11 +179,18 @@ const Heading = styled.h1`
     @media all and (max-width: 1440px) {
         font-size: 22px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
 `;
 const SectionDate = styled.div`
     border: 1px solid #dedddf;
     margin-bottom: 20px;
     border-radius: 6px;
+    @media all and (max-width: 1280px) {
+        font-size: 28px;
+    }
 `;
 const List = styled.ul`
     display: flex;
@@ -194,6 +204,9 @@ const DateIconcontainer = styled.div`
     @media all and (max-width: 1440px) {
         width: 12px;
     }
+    @media all and (max-width: 1280px) {
+        width: 18px;
+    }
 `;
 const DateIcon = styled.img`
     display: block;
@@ -206,6 +219,9 @@ const Datename = styled.h6`
     @media all and (max-width: 1440px) {
         font-size: 14px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 20px;
+    }
 `;
 const SectionBrakfast = styled.div``;
 const BreakfastHead = styled.div`
@@ -216,12 +232,18 @@ const BreakfastHead = styled.div`
     @media all and (max-width: 1440px) {
         margin-bottom: 10px;
     }
+    @media all and (max-width: 1280px) {
+        margin-bottom: 20px;
+    }
 `;
 const BreakfastName = styled.h1`
     font-size: 24px;
     font-weight: 600;
     @media all and (max-width: 1440px) {
         font-size: 18px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 24px;
     }
 `;
 const BreakfastButton = styled.button`
@@ -236,12 +258,18 @@ const BreakfastButton = styled.button`
         padding: 8px 12px;
         font-size: 14px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 16px;
+    }
 `;
 const BreakfastTime = styled.h4`
     font-size: 18px;
     font-weight: 600;
     @media all and (max-width: 1440px) {
         font-size: 16px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
     }
 `;
 const BreakfastCard = styled.div``;
@@ -256,6 +284,9 @@ const ItemCard = styled.li`
     cursor: pointer;
     @media all and (max-width: 1440px) {
         margin: 10px 0px;
+    }
+    @media all and (max-width: 1280px) {
+        margin: 30px 0px;
     }
 `;
 const BreakfastCardImg = styled.div`
@@ -283,6 +314,9 @@ const ItemName = styled.h2`
         font-size: 14px;
         font-weight: 600;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
+    }
 `;
 const ItemPrice = styled.div`
     display: flex;
@@ -293,6 +327,9 @@ const OfferPrice = styled.h2`
     font-weight: 500;
     @media all and (max-width: 1440px) {
         font-size: 16px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
     }
 `;
 const S = styled.div`
@@ -308,6 +345,9 @@ const NormalPrice = styled.h4`
     @media all and (max-width: 1440px) {
         font-size: 16px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
+    }
 `;
 // ===
 const SectionLaunch = styled.div``;
@@ -316,12 +356,18 @@ const LaunchHead = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    @media all and (max-width: 1280px) {
+        margin-bottom: 20px;
+    }
 `;
 const LaunchName = styled.h1`
     font-size: 24px;
     font-weight: 600;
     @media all and (max-width: 1440px) {
         font-size: 20px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 24px;
     }
 `;
 const LaunchButton = styled.button`
@@ -336,12 +382,18 @@ const LaunchButton = styled.button`
         padding: 8px 12px;
         font-size: 14px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 16px;
+    }
 `;
 const LaunchTime = styled.h4`
     font-size: 18px;
     font-weight: 600;
     @media all and (max-width: 1440px) {
         font-size: 16px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
     }
 `;
 const LaunchCard = styled.div``;
@@ -356,6 +408,9 @@ const LItemCard = styled.li`
     cursor: pointer;
     @media all and (max-width: 1440px) {
         margin: 10px 0px;
+    }
+    @media all and (max-width: 1280px) {
+        margin: 30px 0px;
     }
 `;
 const LaunchCardImg = styled.div`
@@ -382,6 +437,9 @@ const LItemName = styled.h2`
     @media all and (max-width: 1440px) {
         font-size: 14px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
+    }
 `;
 const LItemPrice = styled.div`
     display: flex;
@@ -392,6 +450,9 @@ const LOfferPrice = styled.h2`
     font-weight: 500;
     @media all and (max-width: 1440px) {
         font-size: 18px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 20px;
     }
 `;
 const M = styled.div`
@@ -407,6 +468,9 @@ const LNormalPrice = styled.h4`
     @media all and (max-width: 1440px) {
         font-size: 16px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 20px;
+    }
 `;
 // ===
 
@@ -416,12 +480,18 @@ const DinnerHead = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    @media all and (max-width: 1280px) {
+        margin-bottom: 20px;
+    }
 `;
 const DinnerName = styled.h1`
     font-size: 24px;
     font-weight: 600;
     @media all and (max-width: 1440px) {
         font-size: 20px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 24px;
     }
 `;
 const DinnerButton = styled.button`
@@ -436,12 +506,18 @@ const DinnerButton = styled.button`
         font-size: 12px;
         padding: 8px 12px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 14px;
+    }
 `;
 const DinnerTime = styled.h4`
     font-size: 18px;
     font-weight: 600;
     @media all and (max-width: 1440px) {
         font-size: 16px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
     }
 `;
 const DinnerCard = styled.div``;
@@ -457,6 +533,9 @@ const DinnerItemCard = styled.li`
     @media all and (max-width: 1440px) {
         margin: 10px 0px;
     }
+    @media all and (max-width: 1280px) {
+        margin: 30px 0px;
+    }
 `;
 const DinnerCardImg = styled.div`
     width: 100px;
@@ -464,6 +543,9 @@ const DinnerCardImg = styled.div`
     overflow: hidden;
     @media all and (max-width: 1440px) {
         width: 90px;
+    }
+    @media all and (max-width: 1280px) {
+        width: 100px;
     }
 `;
 const DinnerImg = styled.img`
@@ -482,6 +564,9 @@ const DinnerItemName = styled.h2`
     @media all and (max-width: 1440px) {
         font-size: 14px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
+    }
 `;
 const DinnerItemPrice = styled.div`
     display: flex;
@@ -492,6 +577,9 @@ const DinnerOfferPrice = styled.h2`
     font-weight: 500;
     @media all and (max-width: 1440px) {
         font-size: 18px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 20px;
     }
 `;
 const B = styled.div`
@@ -507,6 +595,9 @@ const DinnerNormalPrice = styled.h4`
     @media all and (max-width: 1440px) {
         font-size: 16px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 22px;
+    }
 `;
 // ==
 const SectionUpload = styled.div``;
@@ -519,6 +610,10 @@ const Upload = styled.div`
         font-size: 16px;
         padding: 10px;
     }
+    @media all and (max-width: 1280px) {
+        font-size: 18px;
+        padding: 30px 20px;
+    }
 `;
 const UploadData = styled.h1`
     color: #df8844;
@@ -528,5 +623,8 @@ const UploadData = styled.h1`
     line-height: 1.3em;
     @media all and (max-width: 1440px) {
         font-size: 20px;
+    }
+    @media all and (max-width: 1280px) {
+        font-size: 22px;
     }
 `;
