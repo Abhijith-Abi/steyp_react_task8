@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Serach from "../../assets/images/Food-Site-1.svg";
 
 function Middle() {
     return (
@@ -37,18 +38,15 @@ function Middle() {
                     <Items>
                         <Item>
                             <List>
-                                <ItemHeds style={{ marginRight: "50px" }}>
-                                    <input
-                                        placeholder="Search your food..."
-                                        value=""
-                                    />
-                                    <SrechIcon
-                                        src={
-                                            require("../../assets/images/Food-Site-1.svg")
-                                                .default
-                                        }
-                                    />
-                                </ItemHeds>
+                                <SearchContainer isSearching>
+                                    <SearchIconButton
+                                    // onClick={_toggleSearch}
+                                    >
+                                        {/* {isActive ? { Serach } : { Serach }} */}
+                                        <SearchImg src={Serach} />
+                                    </SearchIconButton>
+                                    <SearchInput placeholder="Search your food..." />
+                                </SearchContainer>
                             </List>
                         </Item>
                     </Items>
@@ -243,12 +241,7 @@ const Item = styled.li`
 `;
 
 const List = styled.div``;
-const SrechIcon = styled.img`
-    width: 20px;
-    @media all and (max-width: 1440px) {
-        width: 15px;
-    }
-`;
+
 const Heding = styled.h1`
     font-weight: bold;
     font-size: 34px;
@@ -284,17 +277,6 @@ const ItemHed = styled.h4`
         background-color: var(--Orange);
     }
 `;
-const ItemHeds = styled.h4`
-    font-size: 14px;
-    padding: 10px;
-    color: var(--Grey);
-    cursor: pointer;
-    background-color: var(--Black);
-    border-radius: 20px;
-    @media all and (max-width: 1280px) {
-        display: none;
-    }
-`;
 const SectionTop = styled.section``;
 const MeetHed = styled.h1`
     font-weight: 600;
@@ -310,7 +292,7 @@ const Datas = styled.ul`
 `;
 const Data = styled.li`
     border-bottom: 2px solid #fff;
-    margin-right: 90px;
+    margin-right: 115px;
     cursor: pointer;
     &:hover {
         border-bottom: 2px solid var(--Orange);
@@ -322,7 +304,35 @@ const Data = styled.li`
     &:first-child {
         border-bottom: 2px solid var(--Orange);
     }
-    margin-right: 35px;
+`;
+
+const SearchContainer = styled.div`
+    position: relative;
+    height: 48px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+`;
+const SearchIconButton = styled.button`
+    position: absolute;
+    top: 13px;
+    left: 210px;
+    border: none;
+    img {
+        width: 100%;
+        display: block;
+    }
+`;
+const SearchImg = styled.img``;
+const SearchInput = styled.input`
+    height: 75%;
+    border-radius: 25px;
+    padding: 1px 25px;
+    margin-right: 20px;
+    background-color: var(--Black);
 `;
 const Contents = styled.h4`
     font-size: 18px;
