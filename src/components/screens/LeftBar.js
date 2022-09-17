@@ -107,6 +107,9 @@ const Container = styled.section`
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    @media all and (max-width: 480px) {
+        display: none;
+    }
 `;
 const SectionTop = styled.div``;
 const Logo = styled.h1`

@@ -1,11 +1,6 @@
 import React from "react";
 import "./App.css";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LeftBar from "./components/screens/LeftBar";
 import Middle from "./components/screens/Middle";
 import styled from "styled-components";
@@ -45,4 +40,7 @@ function App() {
 export default App;
 const Main = styled.section`
     display: flex;
+    @media all and (max-width: 640px) {
+        flex-direction: row;
+    }
 `;

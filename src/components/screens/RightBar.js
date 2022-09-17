@@ -171,6 +171,9 @@ const Container = styled.section`
     @media all and (max-width: 1280px) {
         width: 30%;
     }
+    @media all and (max-width: 980px) {
+        display: none;
+    }
 `;
 const Heading = styled.h1`
     font-size: 24px;

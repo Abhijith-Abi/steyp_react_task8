@@ -234,11 +234,20 @@ const Container = styled.section`
     @media all and (max-width: 1280px) {
         width: 60%;
     }
+    @media all and (max-width: 980px) {
+        width: 90%;
+    }
+    @media all and (max-width: 480px) {
+        width: 100%;
+    }
 `;
 const SectionHeader = styled.header`
     padding: 30px 0px;
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 768px) {
+        padding: 30px 5px;
+    }
 `;
 const Hed = styled.div``;
 const Items = styled.ul`
@@ -248,6 +257,12 @@ const Items = styled.ul`
         &:last-child {
             display: none;
         }
+    }
+    @media all and (max-width: 640px) {
+        &:nth-child(2) {
+            display: none;
+        }
+        margin: auto;
     }
 `;
 const Item = styled.li`
@@ -263,6 +278,19 @@ const Item = styled.li`
     }
     @media all and (max-width: 1050px) {
         margin-right: 2px;
+    }
+    @media all and (max-width: 980px) {
+        margin-right: 26px;
+
+        margin-left: 0px;
+    }
+    @media all and (max-width: 768px) {
+        margin-right: 20px;
+    }
+    @media all and (max-width: 640px) {
+        &:first-child {
+            margin-left: 0;
+        }
     }
 `;
 
@@ -303,7 +331,11 @@ const ItemHed = styled.h4`
         background-color: var(--Orange);
     }
 `;
-const SectionTop = styled.section``;
+const SectionTop = styled.section`
+    @media all and (max-width: 480px) {
+        padding: 0px 30px;
+    }
+`;
 const MeetHed = styled.h1`
     font-weight: 600;
     font-size: 24px;
@@ -335,6 +367,9 @@ const Data = styled.li`
     }
     @media all and (max-width: 1050px) {
         margin-right: 36px;
+    }
+    @media all and (max-width: 640px) {
+        margin-right: 10px;
     }
 `;
 
@@ -377,6 +412,15 @@ const Contents = styled.h4`
     @media all and (max-width: 1280px) {
         font-size: 16px;
     }
+    @media all and (max-width: 640px) {
+        font-size: 14px;
+    }
+    @media all and (max-width: 480px) {
+        font-size: 10px;
+    }
+    @media all and (max-width: 360px) {
+        font-size: 8px;
+    }
 `;
 const Hr = styled.hr`
     border-bottom: 2px solid var(--Black);
@@ -395,6 +439,11 @@ const MenuItems = styled.div`
         grid-row-gap: 10px;
         grid-template-rows: repeat(3, 1fr);
     }
+    @media all and (max-width: 640px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+    }
 `;
 const Grid1 = styled.div`
     grid-area: 1 / 1 / 2 / 2;
@@ -402,6 +451,9 @@ const Grid1 = styled.div`
     border-radius: 10px;
     overflow: hidden;
     @media all and (max-width: 1280px) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    @media all and (max-width: 640px) {
         grid-area: 1 / 1 / 2 / 2;
     }
 `;
@@ -413,6 +465,9 @@ const Grid2 = styled.div`
     @media all and (max-width: 1280px) {
         grid-area: 1 / 2 / 2 / 3;
     }
+    @media all and (max-width: 640px) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 `;
 const Grid3 = styled.div`
     grid-area: 1 / 3 / 2 / 4;
@@ -421,6 +476,9 @@ const Grid3 = styled.div`
     overflow: hidden;
     @media all and (max-width: 1280px) {
         grid-area: 2 / 1 / 3 / 2;
+    }
+    @media all and (max-width: 640px) {
+        grid-area: 3 / 1 / 4 / 2;
     }
 `;
 const Grid4 = styled.div`
@@ -431,6 +489,9 @@ const Grid4 = styled.div`
     @media all and (max-width: 1280px) {
         grid-area: 2 / 2 / 3 / 3;
     }
+    @media all and (max-width: 640px) {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 `;
 const Grid5 = styled.div`
     grid-area: 2 / 2 / 3 / 3;
@@ -440,6 +501,9 @@ const Grid5 = styled.div`
     @media all and (max-width: 1280px) {
         grid-area: 3 / 1 / 4 / 2;
     }
+    @media all and (max-width: 640px) {
+        grid-area: 5 / 1 / 6 / 2;
+    }
 `;
 const Grid6 = styled.div`
     grid-area: 2 / 3 / 3 / 4;
@@ -448,6 +512,9 @@ const Grid6 = styled.div`
     overflow: hidden;
     @media all and (max-width: 1280px) {
         grid-area: 3 / 2 / 4 / 3;
+    }
+    @media all and (max-width: 640px) {
+        grid-area: 6 / 1 / 7 / 2;
     }
 `;
 const ImgContainer = styled.div``;
