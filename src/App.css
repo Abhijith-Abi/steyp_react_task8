@@ -37,7 +37,7 @@ select {
 }
 
 a {
-    color: #000;
+    color: #747474;
 }
 
 .thumb {
@@ -55,6 +55,7 @@ a:hover,
     -moz-opacity: 0.85;
     -khtml-opacity: 0.85;
     opacity: 0.85;
+    color: #000;
 }
 
 p {

@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Navigate,
+} from "react-router-dom";
 import LeftBar from "./components/screens/LeftBar";
 import Middle from "./components/screens/Middle";
 import styled from "styled-components";
@@ -16,7 +21,6 @@ function App() {
         <Router>
             <Routes>
                 <Route
-                    exact
                     path="/"
                     element={
                         <Main>
@@ -26,12 +30,13 @@ function App() {
                         </Main>
                     }
                 />
-                <Route exact path="/breakfast" element={<BreakFast />} />
-                <Route exact path="/lunch" element={<Lunch />} />
-                <Route exact path="/coffee" element={<Coffee />} />
-                <Route exact path="/dinner" element={<Dinner />} />
-                <Route exact path="/icecream" element={<IceCream />} />
-                <Route exact path="*" element={<PageNotFound />} />
+                <Route path="/breakfast" element={<BreakFast />} />
+                <Route path="/lunch" element={<Lunch />} />
+                <Route path="/coffee" element={<Coffee />} />
+                <Route path="/dinner" element={<Dinner />} />
+                <Route path="/icecream" element={<IceCream />} />
+                <Route path="*" element={<PageNotFound />} />
+                <Route path="/pagenotfound" element={<PageNotFound />} />
             </Routes>
         </Router>
     );

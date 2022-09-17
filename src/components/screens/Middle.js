@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Serach from "../../assets/images/Food-Site-1.svg";
-
+import { Link } from "react-router-dom";
 function Middle() {
     return (
         <>
@@ -21,17 +21,23 @@ function Middle() {
                     <Items>
                         <Item>
                             <List>
-                                <ItemHed>Menu</ItemHed>
+                                <ItemHed>
+                                    <Link to="pagenotfound">Menu</Link>
+                                </ItemHed>
                             </List>
                         </Item>
                         <Item>
                             <List>
-                                <ItemHed>Meal plans</ItemHed>
+                                <ItemHed>
+                                    <Link to="pagenotfound">Meal plans</Link>
+                                </ItemHed>
                             </List>
                         </Item>
                         <Item>
                             <List>
-                                <ItemHed>Delivery</ItemHed>
+                                <ItemHed>
+                                    <Link to="pagenotfound">Delivery</Link>
+                                </ItemHed>
                             </List>
                         </Item>
                     </Items>
@@ -55,22 +61,34 @@ function Middle() {
                     <MeetHed>Find the menu you want</MeetHed>
                     <Datas>
                         <Data>
-                            <Contents>Recomended</Contents>
+                            <Contents>
+                                <Link to="/">Recomended</Link>
+                            </Contents>
                         </Data>
                         <Data>
-                            <Contents>Breakfast</Contents>
+                            <Contents>
+                                <Link to="breakfast">Breakfast</Link>
+                            </Contents>
                         </Data>
                         <Data>
-                            <Contents>Lunch</Contents>
+                            <Contents>
+                                <Link to="lunch">Lunch</Link>
+                            </Contents>
                         </Data>
                         <Data>
-                            <Contents>Dinner</Contents>
+                            <Contents>
+                                <Link to="dinner">Dinner</Link>
+                            </Contents>
                         </Data>
                         <Data>
-                            <Contents>Ice Cream</Contents>
+                            <Contents>
+                                <Link to="icecream">Ice Cream</Link>
+                            </Contents>
                         </Data>
                         <Data>
-                            <Contents>Coffee</Contents>
+                            <Contents>
+                                <Link to="coffee">Coffee</Link>
+                            </Contents>
                         </Data>
                     </Datas>
                     <Hr />
@@ -226,6 +244,11 @@ const Hed = styled.div``;
 const Items = styled.ul`
     display: flex;
     align-items: center;
+    @media all and (max-width: 1280px) {
+        &:last-child {
+            display: none;
+        }
+    }
 `;
 const Item = styled.li`
     margin-left: 50px;
@@ -236,7 +259,10 @@ const Item = styled.li`
         margin-left: 30px;
     }
     @media all and (max-width: 1280px) {
-        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media all and (max-width: 1050px) {
+        margin-right: 2px;
     }
 `;
 
@@ -301,8 +327,14 @@ const Data = styled.li`
     &:last-child {
         margin-right: 0px;
     }
-    &:first-child {
-        border-bottom: 2px solid var(--Orange);
+    @media all and (max-width: 1440px) {
+        margin-right: 80px;
+    }
+    @media all and (max-width: 1280px) {
+        margin-right: 40px;
+    }
+    @media all and (max-width: 1050px) {
+        margin-right: 36px;
     }
 `;
 
@@ -470,4 +502,5 @@ const PlceOrder = styled.button`
         margin-left: 50px;
     }
 `;
+
 // ===
