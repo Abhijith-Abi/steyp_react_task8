@@ -25,6 +25,16 @@ function App() {
                         </Main>
                     }
                 />
+                <Route
+                    path="/react_exam_task8"
+                    element={
+                        <Main>
+                            <LeftBar />
+                            <Middle />
+                            <RightBar />
+                        </Main>
+                    }
+                />
                 <Route path="/breakfast" element={<BreakFast />} />
                 <Route path="/lunch" element={<Lunch />} />
                 <Route path="/coffee" element={<Coffee />} />
