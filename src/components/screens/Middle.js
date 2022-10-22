@@ -3,6 +3,41 @@ import styled from "styled-components";
 import Serach from "../../assets/images/Food-Site-1.svg";
 import { Link } from "react-router-dom";
 function Middle() {
+    // const [cart, setCart] = useState([]);
+
+    // // function for adding to cart
+    // let ordered = (id) => {
+    //     let added_product = products.find((product) => product.id === id);
+    //     setCart([...cart, added_product]);
+    //     console.log(cart);
+    // };
+
+    // //   rendering the cart
+    // let add_To_Cart = () => {
+    //     return cart.map((pro) => {
+    //         console.log(pro);
+    //         return (
+    //             <ItemCard>
+    //                 <BreakfastCardImg>
+    //                     <BrakfastImg
+    //                         src={require(`../../assets/images/sideimg${pro.id}.jpg`)}
+    //                     />
+    //                 </BreakfastCardImg>
+    //                 <BreakfastDetials>
+    //                     <ItemName2>{pro.title}</ItemName2>
+    //                     <ItemPrice>
+    //                         <OfferPrice>
+    //                             <Sr>$</Sr>
+    //                             {pro.discount_Price}
+    //                         </OfferPrice>
+    //                         <NormalPrice>{pro.Actual_Price}</NormalPrice>
+    //                     </ItemPrice>
+    //                 </BreakfastDetials>
+    //             </ItemCard>
+    //         );
+    //     });
+    // };
+
     return (
         <>
             <Container>
