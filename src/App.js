@@ -26,7 +26,7 @@ function App() {
                     }
                 />
                 <Route
-                    path="/react_exam_task8"
+                    path="/steyp_react_task8"
                     element={
                         <Main>
                             <LeftBar />
